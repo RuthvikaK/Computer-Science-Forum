@@ -1,1 +1,144 @@
+body {
+    background: linear-gradient(#B0C4DE, #DCDDDE);
+    color: black;
+    font: italic 1em "DejaVu Sans Mono", monospace;
+}
 
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #B0C4DE;
+    height: 12em;
+}
+
+nav ul {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: end; */
+    align-items: center;
+}
+
+nav li {
+    display: flex;
+    padding-left: 15rem;
+    font-size: 1.5rem;
+} 
+
+.welcome {
+    display: grid;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    /* padding-bottom: 1em; */
+    position: sticky;
+    bottom: 0;
+    background-color: #B0C4DE;
+    font-size: small;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* if you wrap your main content in <main> */
+main{
+    flex: 1 0 auto;
+}
+
+footer{
+    flex-shrink:0;
+}
+
+.post_em {
+    border: 2px solid black;
+}
+
+.post_te {
+    border: 2px solid black;
+}
+
+.post_em, .post_te {
+    margin: 3px;
+    padding: 3px;
+}
+
+.heading {
+    border: 2px solid black;
+    padding: 6px;
+}
+
+#post {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#post #email {
+    height: 2em;
+}
+
+#post #message {
+    height: 8em;
+}
+
+main {
+    overflow: scroll;
+}
+
+.cont {
+    display: grid;
+    margin: 0;
+}
+
+.cont #email {
+    height: 2em;
+    max-width: 500px;
+}
+
+.cont #subject {
+    height: 3em;
+    max-width: 500px;
+    overflow: scroll;
+}
+
+.cont #message {
+    height: 8em;
+    max-width: 500px;
+    overflow: scroll;
+}
+
+div #submit {
+    padding: 0.5em;
+}
+
+#main1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+}
+.tbd {
+    grid-column: 2;
+    grid-row: 2;
+    border: 2px solid black;
+    margin-right: 5em;
+}
+
+main div {
+    border: 1px solid black;
+    padding: 1em;
+    background-color: white;
+    margin: 2em;
+}
+
+header img {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 30px;
+}
